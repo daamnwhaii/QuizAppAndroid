@@ -20,7 +20,9 @@
         android:textColor="#FFFFFF"
         android:textSize="25sp" />
 
+    <!--ПЕРВАЯ СТРОКА ВИКТОРИН-->
     <LinearLayout
+        android:id="@+id/line_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -30,6 +32,7 @@
         android:layout_marginEnd="20dp"
         android:weightSum="2">
 
+        <!--КАРТОЧКА 1-->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -52,9 +55,101 @@
                 android:text="Europe"
                 android:textColor="#000000"
                 android:textSize="18sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"/>
+        </LinearLayout>
 
+        <!--КАРТОЧКА 2-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_back_white10"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:src="@drawable/asia" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_marginTop="2dp"
+                android:text="Asia"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
         </LinearLayout>
     </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/line_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/line_1"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:weightSum="2">
+
+        <!--ВТОРАЯ СТРОКА ВИКТОРИН-->
+        <!--КАРТОЧКА 3-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_back_white10"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="151dp"
+                android:layout_height="100dp"
+                android:src="@drawable/america" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_marginTop="2dp"
+                android:text="America"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!--КАРТОЧКА 4-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_back_white10"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:src="@drawable/africa" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_marginTop="2dp"
+                android:text="Africa"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+
 
 </RelativeLayout>
